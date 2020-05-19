@@ -243,7 +243,7 @@ kite _ y = y
 --   The omega bird looks as mockingbird mockingbird.
 --   But, I've implemented this as itself, because omega isn't going to stop anyway.
 omega :: a
-omega = omega -- ^ mockingbird mockingbird
+omega = omega -- mockingbird mockingbird
 
 -- | KM
 konstantMocker :: c -> (a -> b) -> b
