@@ -239,7 +239,7 @@ vireo'' f x y z w = f x w y z
 kite :: a -> b -> b
 kite _ y = y
 
--- FIXME: compile error occurred.
+-- FIXME: Omega is missing because it will fail to compile. :-(
 -- | Omega
 -- omega :: a
 -- omega = mockingbird mockingbird
