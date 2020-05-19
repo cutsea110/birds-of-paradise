@@ -53,7 +53,7 @@ module Data.Function.Combinator.Birds
   , theta
   ) where
 
-import Unsafe.Coerce
+import Unsafe.Coerce (unsafeCoerce)
 
 -- | B
 bluebird :: (b -> c) -> (a -> b) -> a -> c

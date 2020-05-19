@@ -6,7 +6,7 @@ cabal-version:       2.4
 name:                birds-of-paradise
 version:             0.1.0.0
 synopsis:            Birds of Paradise
--- description:
+description:         Birds of Paradise is yet another SK combinator library.
 homepage:            https://github.com/cutsea110/birds-of-paradise.git
 -- bug-reports:
 license:             BSD-3-Clause
