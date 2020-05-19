@@ -47,7 +47,7 @@ module Data.Function.Combinator.Birds
   , vireo''
 
   , kite
-  -- , omega
+  , omega
   , konstantMocker
   , crossedKonstantMocker
   , theta
@@ -239,10 +239,11 @@ vireo'' f x y z w = f x w y z
 kite :: a -> b -> b
 kite _ y = y
 
--- FIXME: Omega is missing because it will fail to compile. :-(
 -- | Omega
--- omega :: a
--- omega = mockingbird mockingbird
+--   The omega bird looks as mockingbird mockingbird.
+--   But, I've implemented this as itself, because omega isn't going to stop anyway.
+omega :: a
+omega = omega -- ^ mockingbird mockingbird
 
 -- | KM
 konstantMocker :: c -> (a -> b) -> b
