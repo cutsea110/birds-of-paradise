@@ -56,6 +56,7 @@ module Data.Function.Combinator.Birds
 import Unsafe.Coerce (unsafeCoerce)
 
 -- | B
+-- Haskell @('.')@
 bluebird :: (b -> c) -> (a -> b) -> a -> c
 bluebird f g x = f (g x)
 
@@ -72,6 +73,7 @@ becard :: (c -> d) -> (b -> c) -> (a -> b) -> a -> d
 becard f g h x = f (g ( h x))
 
 -- | C
+-- Haskell 'flip'
 cardinal :: (a -> b -> c) -> b -> a -> c
 cardinal f x y = f y x
 
@@ -108,6 +110,7 @@ hummingbird :: (a -> b -> a -> c) -> a -> b -> c
 hummingbird f x y = f x y x
 
 -- | I
+-- Haskell 'id'
 idiot :: a -> a
 idiot x = x
 
@@ -116,6 +119,7 @@ jay :: (a -> b -> b) -> a -> a -> b -> b
 jay f x y z = f x (f y z)
 
 -- | K
+-- Haskell 'const'
 kestrel :: a -> b -> a
 kestrel x _ = x
 
@@ -160,6 +164,7 @@ robin :: b -> (a -> b -> c) -> a -> c
 robin x f y = f y x
 
 -- | S
+-- Haskell @('<*>')@ in 'Applicative'
 starling :: (a -> b -> c) -> (a -> b) -> a -> c
 starling f g x = f x (g x)
 
@@ -188,6 +193,7 @@ whybird :: (x -> x) -> x
 whybird x = x (whybird x)
 
 -- | I*
+-- Haskell @('$')@
 idiot' :: ((a -> b) -> a) -> (a -> b) -> a
 idiot' f g = f g
 
