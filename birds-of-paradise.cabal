@@ -4,7 +4,7 @@ cabal-version:       2.4
 -- http://haskell.org/cabal/users-guide/
 
 name:                birds-of-paradise
-version:             0.2.1.0
+version:             0.2.1.1
 synopsis:            Birds of Paradise
 description:         Birds of Paradise is yet another SK combinator library.
 homepage:            https://github.com/cutsea110/birds-of-paradise.git
@@ -21,7 +21,7 @@ library
   exposed-modules:     Data.Function.Combinator.Birds
   -- other-modules:
   -- other-extensions:
-  build-depends:       base >=4.12.0.0 && <4.14
+  build-depends:       base >=4.12.0.0 && <4.16
   hs-source-dirs:      src
   default-language:    Haskell2010
   ghc-options:         -Wall
@@ -31,4 +31,4 @@ test-suite birds-of-paradise-test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             MyLibTest.hs
-  build-depends:       base >=4.12.0.0 && <4.14
+  build-depends:       base >=4.12.0.0 && <4.16
