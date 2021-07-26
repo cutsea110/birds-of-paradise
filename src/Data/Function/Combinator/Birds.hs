@@ -70,7 +70,7 @@ bunting f g x y z = f (g x y z)
 
 -- | B3
 becard :: (c -> d) -> (b -> c) -> (a -> b) -> a -> d
-becard f g h x = f (g ( h x))
+becard f g h x = f (g (h x))
 
 -- | C
 -- Haskell 'flip'
